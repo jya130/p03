@@ -1,0 +1,76 @@
+.intro{
+  display: flex;
+  flex:wrap;
+  padding-top:2rem;
+  padding-bottom: 8rem;
+}
+
+
+.intro_img{
+  flex: 4;
+  align-items: flex-start;
+}
+
+.name{
+  letter-spacing: 1.5px;
+  font-size: 12px;
+  transform: rotate(0deg);
+  position: absolute;
+  bottom: 30%;
+}
+
+.intro_img img{
+  max-width: 920px;
+  width: 100%;
+  max-height: 720px;
+  height: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.brief{
+  margin-top: 40%;
+  margin-bottom:15%;
+}
+
+.brief h2{
+  font-weight: bold;
+}
+
+.info{
+  padding-left: 50px;
+  align-self: flex-end;
+  font-size: 16px;
+  flex:2;
+  letter-spacing: 1.5px;
+  transform: rotate(0deg);
+}
+
+.content{
+  margin-top: 8rem;
+  text-align: center;
+}
+
+.row{
+  margin-top: 20px;
+  margin-bottom: 80px;
+}
+
+
+h3{
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.icon{
+  max-width: 50px;
+  max-height: 50px;
+  margin-right: 25px;
+}
+
+
+
+.project_img{
+  max-width: 280px;
+  max-height: 280px;
+}
