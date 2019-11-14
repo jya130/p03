@@ -1,7 +1,9 @@
 body{
-  background-color: #BDC0BA;
+  background-color: #FCFAF2;
   color: black;
   font-family: 'Muli', sans-serif;
+  font-size: 14px;
+
 }
 
 h1{
@@ -10,12 +12,12 @@ h1{
 }
 
 a{
-  color: white;
+  color: #656765;
 }
 
 a:hover{
   text-decoration: none;
-  color: white;
+  color: black;
 }
 
 .header_container{
@@ -31,31 +33,53 @@ a:hover{
 }
 
 .header_container a:hover{
-  color: white;
+  color: black;
 }
 
 .intro{
   display: flex;
   flex:wrap;
   justify-content: space-between;
-  padding-top:8rem;
-  padding-bottom: 8rem;
+  height: 100%;
+  height: 80vh;
+  padding-top: 8rem;
+  margin-bottom: 20rem;
+}
+
+@media screen and (max-width:992px) {
+  .intro{
+    margin-bottom: 0rem;
+  }
+  .content{
+    padding-top: 5rem;
+    padding-bottom: 8rem;
+  }
+  .content_img{
+    display: none;
+  }
+}
+
+.iimg{
+  text-align: center;
+  align-self: center;
 }
 
 .intro img{
-  max-width: 520px;
+  max-width: 80%;
 }
 
 .name{
-  align-self:center;
-  font-size: 16px;
+  font-weight: bold;
+  align-self: flex-end;
   letter-spacing: 1.5px;
-  transform: rotate(-90deg);
+}
+.name a{
+  color: black;
 }
 
 .info{
   align-self: center;
-  font-size: 16px;
+  font-size: 13px;
   letter-spacing: 1.5px;
   transform: rotate(90deg);
 }
@@ -74,16 +98,7 @@ a:hover{
   background-color: #4F726C;
 }
 
-.content_box{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content:space-between;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
-
 .content_text{
-  max-width: 420px;
   border-top: 1px solid #828282;
   display: flex;
   flex-direction: column;
@@ -94,15 +109,58 @@ a:hover{
 }
 
 h2{
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   letter-spacing: 1px;
-  
+
 }
 
+.content_img{
+  text-align: right;
+  vertical-align: middle;
+}
 
 .content_img img{
   max-width: 280px;
   max-height: 280px;
+}
+
+.content{
+  padding-top: 23rem;
+  padding-bottom: 15rem;
+}
+
+
+.row{
+  max-height: 480px;
+}
+
+.textalign_right{
+  text-align: right;
+}
+
+h3{
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.icon{
+  max-width: 50px;
+  max-height: 50px;
+  margin-right: 25px;
+}
+
+.project_text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.project_img img{
+  max-width: 720px;
+  max-height: 480px;
+  width: 100%;
+  height: 100%;
 }
 
 
@@ -112,7 +170,7 @@ h2{
   bottom: 0;
   left: 0;
   padding: 3rem;
-  margin-top: 5rem;
+  margin-top: 20rem;
   text-align: center;
   color: gray;
 }
@@ -126,4 +184,135 @@ h2{
 
 .footer div{
   margin-bottom: 10px;
+}
+
+@-webkit-keyframes fadeInUp {
+	0% {
+		opacity: 0;
+		-webkit-transform: translateY(20px);
+	}	100% {
+		opacity: 1;
+		-webkit-transform: translateY(0);
+	}
+}
+
+@-moz-keyframes fadeInUp {
+	0% {
+		opacity: 0;
+		-moz-transform: translateY(20px);
+	}
+
+	100% {
+		opacity: 1;
+		-moz-transform: translateY(0);
+	}
+}
+
+@-o-keyframes fadeInUp {
+	0% {
+		opacity: 0;
+		-o-transform: translateY(20px);
+	}
+
+	100% {
+		opacity: 1;
+		-o-transform: translateY(0);
+	}
+}
+
+@keyframes fadeInUp {
+	0% {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+.animatable {
+
+  /* initially hide animatable objects */
+  visibility: hidden;
+
+  /* initially pause animatable objects their animations */
+  -webkit-animation-play-state: paused;
+  -moz-animation-play-state: paused;
+  -ms-animation-play-state: paused;
+  -o-animation-play-state: paused;
+  animation-play-state: paused;
+}
+
+/* show objects being animated */
+.animated {
+  visibility: visible;
+
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -ms-animation-duration: 1s;
+  -o-animation-duration: 1s;
+  animation-duration: 1s;
+
+  -webkit-animation-play-state: running;
+  -moz-animation-play-state: running;
+  -ms-animation-play-state: running;
+  -o-animation-play-state: running;
+  animation-play-state: running;
+}
+
+
+
+.animated.fadeInUp {
+	-webkit-animation-name: fadeInUp;
+	-moz-animation-name: fadeInUp;
+	-o-animation-name: fadeInUp;
+	animation-name: fadeInUp;
+}
+
+#return-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.7);
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 16px;
+    top: 13px;
+    font-size: 19px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+#return-to-top:hover i {
+    color: #fff;
+    top: 5px;
 }
