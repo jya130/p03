@@ -1,5 +1,5 @@
 section {
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 #scroll-indicator {
@@ -68,7 +68,7 @@ section {
   transition: width 0.15s cubic-bezier(0.455, 0.03, 0.515, 0.955), height 0.15s cubic-bezier(0.455, 0.03, 0.515, 0.955), left 0.15s cubic-bezier(0.455, 0.03, 0.515, 0.955), bottom 0.15s cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 #scroll-indicator li:hover:before {
-  left: calc(100% + 10px);
+  /* left: calc(100% + 10px); */
   opacity: 1;
   visibility: visible;
 }

@@ -50,3 +50,9 @@
     margin-bottom: 8rem;
   }
 }
+
+@media screen and (max-width:600px) {
+  .brief h2{
+    font-size: 24px;
+  }
+}
