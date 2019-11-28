@@ -10,6 +10,8 @@
     <!-- <link rel="stylesheet" href="css/styleguide.css"> -->
     <link rel="stylesheet" href="css/master.css">
     <link rel="stylesheet" href="css/sidescroll.css">
+    <link rel="stylesheet" href="css/bottom-bar.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"  rel="stylesheet" >
     <title>Porfolio HomePage</title>
   </head>
   <body>
@@ -18,9 +20,34 @@
 
     <div class="container">
       <div class="header_container">
-        <a href="#">Home</a>
-        <a href="#projects">Projects</a>
-        <a href="contact.html">Contact</a>
+        <div class="hamburgur">
+          <a class="icon" onClick="openNav()">
+            <img src="img/ham.png" alt="Hamburger Menu">
+          </a>
+        </div>
+
+        <div class="container menu">
+          <div class="label">More</div>
+          <div class="spacer"></div>
+          <div class="item">
+            <a href="Styleguides.html"><span>Styleguide</span></a>
+          </div>
+          <div class="item">
+            <a href="Reference.html"><span>Reference</span></a>
+          </div>
+        </div>
+
+        <div id="mySidenav" class="sidenav">
+          <a class="closebtn" onclick="closeNav()">X</a>
+          <a  onclick="closeNav()">Home</a>
+          <a href="#projects" onclick="closeNav()">Projects</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="real_header">
+          <a href="home.html">Home</a>
+          <a href="#projects">Projects</a>
+          <a href="contact.html">Contact</a>
+        </div>
       </div>
 
       <div class="intro row animatable fadeInUp">
@@ -31,7 +58,7 @@
           </a>
         </div>
         <div class="iimg">
-          <img src="img/Untitled-1.png" alt="ddd">
+          <img src="img/intro.png" alt="Intro Water Effect">
         </div>
         <div class="info">
           <div>J</div>
@@ -44,31 +71,26 @@
           <div>Y</div>
           <div>i</div>
           <div>p</div>
-
         </div>
       </div>
 
         <div class="content animatable fadeInUp">
           <div class="row">
-            <div class="col-md-1">
-            </div>
-            <div class="content_text col-md-5">
+            <div class="content_text col-md-8">
               <h2>About Me</h2>
-              <p>Third Year Undergraduate at School of Interactive Art and
-                Technology, concentrating studies on Design and Interactive
-                System. Familiar with UX/UI design principles and Java Basics, and fluent in
-                Adobe Design Suite. Have experience with operation and
-                advertising while working in Wine, Beer, and Spirit industry.</p>
+              <h6>UI/UX Designer</h6>
+              <p>I am a Third Year Undergraduate at School of Interactive Art and Technology, concentrating studies on Design and Interactive System. Being a Junior designer allows me to develop critical thinking and creative mindset to design meaningful projects tailored to different problem spaces. <br><br>
+                Outside of school, the Experience with operation and advertising in the Wine and Beer industry helps me have a foundation of business mindset and content writing skills.</p>
             </div>
-            <div class="content_img col-md-5">
-              <img src="img/profile.jpeg" alt="shaker">
-            </div>
-            <div class="col-md-1">
+            <div class="content_img col-md-4">
+              <img src="img/profile.jpeg" alt="Profile Picture">
             </div>
           </div>
         </div>
 
         <div class="Project_folder" id="projects">
+
+          <div id='scroll-indicator' class="animatable fadeInUp"></div>
 
           <section data-title='One' id='one'>
             <div class="content container animatable fadeInUp">
@@ -76,30 +98,33 @@
                   <div class="col-md-1">
                   </div>
                   <div class="project_img col-md-7">
-                    <a href="project1.html"><img src="img/intro2.png" alt="shaker"></a>
+                    <a href="project1.html"><img src="img/featuredesign.png" alt="Citymapper Design Image"></a>
                   </div>
                   <div class="project_text col-md-3">
                       <h3>Feature Design</h3>
-                      <h5>Designed a weather alert feature for Citymapper</h5>
-                      <a href="project1.html">View Project</a>
+                      <h6>Weather Alert Feature For Citymapper</h6>
+                      <br>
+                      <a href="project1.html">View</a>
                   </div>
                   <div class="col-md-1">
                   </div>
               </div>
             </div>
           </section>
+
           <section data-title='Two' id='two'>
             <div class="content container animatable fadeInUp">
               <div class="project row">
                   <div class="col-md-1">
                   </div>
                   <div class="project_img col-md-7">
-                    <a href="project2.html"><img src="img/Render2.jpg" alt="shaker"></a>
+                    <a href="project2.html"><img src="img/BobaIntro.jpg" alt="Bubble Tea Image"></a>
                   </div>
                   <div class="project_text  col-md-3">
                       <h3>Animation Design</h3>
-                      <h5>Designed and wrote script for a aniamtion story</h5>
-                      <a href="project2.html">View Project</a>
+                      <h6>The journey of a Boba Milk Tea</h6>
+                      <br>
+                      <a href="project2.html">View</a>
                   </div>
                   <div class="col-md-1">
                   </div>
@@ -113,20 +138,18 @@
           <section data-title='Seven' id='seven'></section>
           <section data-title='Eight' id='eight'></section>
           <section data-title='Nine' id='nine'></section> -->
-          <nav id='scroll-indicator'></nav>
         </div>
       </div>
 
 
     <div class="footer  animatable fadeInUp" id="contact">
-      <div>Johnny Jinliang Ye</div>
       <div>UX/UI Designer | Content Writer | WSET Lv.2 Wine Judge | Prud'Homme Beer Judge</div>
-      <a href="Styleguides.html">Styleguide</a>
     </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   <script src="javascript/sidescroll.js"></script>
   <script src="javascript/scrolleffect.js"></script>
   <script src="javascript/return.js"></script>
+  <script src="javascript/hamburgur.js"></script>
   </body>
 </html>

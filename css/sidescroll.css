@@ -1,14 +1,17 @@
-section {
-  /* height: 100vh; */
-}
-
 #scroll-indicator {
-  position: fixed;
+  position: sticky;
   top: 50%;
-  right: 20px;
+  width: 50px;
+  z-index: 999;
   -webkit-transform: translate(0, -50%);
           -ms-transform: translate(0, -50%);
           transform: translate(0, -50%);
+}
+
+@media screen and (max-width:500px) {
+ #scroll-indicator{
+  transform: scale(0.8);
+ }
 }
 #scroll-indicator ul {
   margin: 0;
@@ -22,9 +25,9 @@ section {
 #scroll-indicator li.active:before {
   opacity: 0;
   visibility: hidden;
-  -webkit-transform: translate(-50% 0);
-          -ms-transform: translate(-50% 0);
-          transform: translate(-50% 0);
+  -webkit-transform: translate(-50%, 0);
+          -ms-transform: translate(-50%, 0);
+          transform: translate(-50%,0);
 }
 #scroll-indicator li.active a {
   height: 42px;
@@ -52,7 +55,7 @@ section {
   left: 2px;
   height: 2px;
   width: calc(100% - 4px);
-  background: black;
+  background: #434343;
   pointer-events: none;
   -webkit-transition: width 0.25s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.1s, height 0.25s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.1s, left 0.25s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.1s, bottom 0.25s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.1s;
   -o-transition: width 0.25s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.1s, height 0.25s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.1s, left 0.25s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.1s, bottom 0.25s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.1s;
@@ -82,7 +85,7 @@ section {
   line-height: 36px;
   font-family: 'Open Sans', sans-serif;
   text-decoration: none;
-  color: black;
+  color: #434343;
   overflow: hidden;
   -webkit-transition: height 0.25s cubic-bezier(0.455, 0.03, 0.515, 0.955);
   -o-transition: height 0.25s cubic-bezier(0.455, 0.03, 0.515, 0.955);

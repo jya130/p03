@@ -1,3 +1,5 @@
+'use strict';
+
 jQuery(function($) {
 
   // Function which adds the 'animated' class to any '.animatable' in view

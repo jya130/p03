@@ -8,6 +8,16 @@
   bottom: 0;
 }
 
+p{
+  margin-bottom: 28px;
+}
+
+span{
+  font-weight: lighter;
+  font-size: 10px;
+  margin-bottom: 18px;
+}
+
 .intro_img img{
   max-width: 920px;
   width: 100%;
@@ -21,6 +31,15 @@
   text-align: center;
 }
 
+.overview{
+  margin-top: 30rem;
+  text-align: center;
+}
+
+iframe{
+  max-width: 100%;
+  height: auto;
+}
 
 .row{
   margin-bottom: 10rem;
@@ -55,4 +74,13 @@
   .brief h2{
     font-size: 24px;
   }
+  .overview{
+    margin-top: 10rem;
+  }
+}
+
+
+/* ---- */
+#scroll-indicator {
+  position: fixed;
 }

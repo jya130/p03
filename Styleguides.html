@@ -7,36 +7,26 @@
     <link rel="icon" href="img/logo.png">
     <link href="https://fonts.googleapis.com/css?family=Asap%7CHeebo%7CLato%7CMuli%7CSintony%7CIBM+Plex+Sans%7CActor%7CArsenal%7CPoppins%7CRoboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <!-- <link rel="stylesheet" href="css/styleguide.css"> -->
     <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/styleguide.css">
     <title>Styleguide</title>
   </head>
   <body>
-
-
-    <a href="javascript:" id="return-to-top"></a>
+    <div id="back-to-top-btn">^</div>
 
     <div class="container">
-      <div class="row">
-
-      </div>
       <div class="header_container">
-        <a href="home.html">Home</a>
-        <a href="#">|</a>
-        <a href="#typography">Typography</a>
-        <a href="#colors">Colors</a>
-        <a href="#interactive">Interactive</a>
-        <a href="#combined">Combined Element</a>
+        <a href="home.html">Back</a>
       </div>
 
         <div class="example">
-          <div class="typography" id="typography">
+          <div class="styleblock container" id="typography">
             <h2>Typography</h2>
             <div class="header">
               <h2>Header Level 1</h2>
               <h3>Header Level 2</h3>
               <h4>Header Level 3</h4>
-              <h5>Header Level 4</h5>
+              <h6>Header Level 4</h6>
             </div>
 
             <div class="paragraph">
@@ -48,21 +38,21 @@
           </div>
 
 
-          <div class="colortitle" id="color">
+          <div class="styleblock container" id="color">
             <h2>Color</h2>
-            <div class="color" >
-              <div class="lightgreen">
+            <div class="color row" >
+              <div class="lightgreen col-md-4">
               </div>
-              <div class="darkergreen">
+              <div class="darkergreen col-md-4">
               </div>
-              <div class="black">
+              <div class="black col-md-4">
               </div>
-              <div class="lightyellow">
+              <div class="lightyellow col-md-4">
               </div>
             </div>
           </div>
 
-          <div class="interactive" id="interactive">
+          <div class="styleblock container" id="interactive">
               <h2>interactive elements</h2>
             <h4>in-line text</h4>
             This is a UX/UI porfolio for <a href="#">Johnny Ye</a>
@@ -78,23 +68,15 @@
              </nav>
             </div>
 
-            <h4>buttons</h4>
-            <a href="#" class="cta_button">Button</a>
-            <h4>text input</h4>
-            <div class="txtinput">
-              <label for="txt-input">Search</label>
-              <input id="txt-input" type="text" placeholder="What's in mind?">
-            </div>
-
             <h4>image with link</h4>
             <div class="project_img">
               <a href="#" target="_blank">
-                <img src="img/intro2.png" alt="Project Image recap">
+                <img src="img/featuredesign.png" alt="Project Image recap">
               </a>
             </div>
           </div>
 
-          <div id="combined">
+          <div class="styleblock container" id="combined">
           <h2>Combined Elements</h2>
           <div class="paragraph">
               <h4>Project Container</h4><br>
@@ -102,7 +84,7 @@
                   <div class="col-md-1">
                   </div>
                   <div class="project_img col-md-7">
-                    <img src="img/intro2.png" alt="shaker">
+                    <img src="img/featuredesign.png" alt="Citymapper Design">
                   </div>
                   <div class="project_text col-md-3">
                       <h4>/Feature Design</h4>
@@ -112,8 +94,8 @@
                   <div class="col-md-1">
                   </div>
               </div>
-                <h4>Process Container</span> </h4><br>
-                <div class="process_containe">
+                <h4>Process Container</h4><br>
+                <div class="process_container">
                   <div class="row">
                     <div class="col-md-3">
                     </div>
@@ -130,7 +112,7 @@
                     <div class="col-md-3">
                     </div>
                     <div class="col-md-6 process_img">
-                      <img src="img/draft.jpg" alt="">
+                      <img src="img/storyboard.jpg" alt="Storyboard">
                     </div>
                     <div class="col-md-3">
                     </div>
@@ -140,6 +122,7 @@
           </div>
         </div>
       </div>
+    </div>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
